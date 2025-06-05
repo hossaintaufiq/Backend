@@ -16,4 +16,9 @@ let arr3 = arr.filter(function(val){
     return val%3==0; 
 })
 
-console.log(arr3);
+
+let arr4= arr.forEach(function(val){
+    return val;
+})
+
+console.log(arr4);
