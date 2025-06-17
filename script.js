@@ -1,84 +1,48 @@
-// console.log("Hello, World!");
+const fs = require('fs');
 
 
-// let arr = [20,34,20,45,67,89,90,100,120,130,140,150,160,170,180,190,200 ];
 
-// let arr2 = arr.map(function(val){
-//     return val; 
+// Write "Hello world!" to a file named hello.txt
+
+// fs.writeFile("hello.txt", "Hello world!", function(err){
+//     if(err) console.error(err); 
+//     else console.log("File written successfully!");
 // })
 
 
-// console.log(arr2);
+//  append something to the file hello.txt 
 
+// fs.appendFile("hello.txt", "\nNew line for the append operation", function(err){
+//     if(err) console.error(err); 
+//     else console.log("Append operation completed successfully!"); 
+// })
 
+// reading a file from the existing file system 
+// fs.readFile("hello.txt", function(err,data){
+//     if(err) console.error(err); 
+//     else console.log(data.toString()); 
 
-// let arr3 = arr.filter(function(val){
-//     return val%3==0; 
 // })
 
 
-// let arr4= arr.forEach(function(val){
-//     // return val + " Hello";
-//     console.log(val + " Hello");
+//  rename an existing file 
+// fs.rename("data.txt", "dataset.txt", function(err){
+//     if(err) console.error(err); 
+//     else console.log ("File renamed successfully to dataset.txt!");
 // })
 
-// console.log(arr4);
+// coping a file to another location 
 
-// alert("Hello, World!");
-// let arr = [20, 34, 20, 45, 67, 89, 90, 100, 120, 130, 140, 150, 160, 170, 180, 190, 200];
+// fs.copyFile("dataset.txt","Copy/dataset.txt", function(err){
+//     if(err) console.error(err); 
+//     else console.log("File copied successfully to Copy/dataset.txt!");
+// } )
 
+  
 
-// var arr = [20, 34, 20, 45, 67, 89, 90, 100, 120, 130, 140, 150, 160, 170, 180, 190, 200];
+// delettin file form the file system 
 
-// var i=0;
-
-// for each loop 
-// arr.forEach(function(val){
-//     console.log("-->>"+" The value is "+val);
-// })
-
-
-// map loop 
-
-// var arr2= arr.map(function(val){
-//     return val*2; 
-// })
-
-
-// arr2.forEach(function(val){
-//     console.log("-->>" + " The value is " + val);
-// })
-// // console.log(arr2);
-
-// var newArr=arr2.filter(function(val){
-//     return val%2==0;
-// })
-
-// console.log(newArr);
-
-
-// var ans = arr2.find(function(val){
-//     if(val==100){
-//         return true;
-//     }
-//     else {
-//         return false;
-//     }
-// }); 
-// console.log(ans);
-
-
-
-// function abcd(){
-//     return 123; 
-// }
-
-
-// abcd(); 
-
-
-var blob = await fetch(`https://randomuser.me/api/`); 
-
-var res = await blob.json();
-
-console.log(res);
+fs.unlink("Copy/data.txt", function(err){
+    if(err) console.error(err); 
+    else console.log("File deleted successfully from Copy/data.txt!");
+})
