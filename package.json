@@ -14,7 +14,12 @@
   "author": "",
   "type": "commonjs",
   "main": "script.js",
+
   "scripts": {
+    "start": "npm.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jokes": "^0.0.2"
   }
 }
