@@ -12,14 +12,15 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "script.js",
-
   "scripts": {
     "start": "npm.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "jokes": "^0.0.2"
+    "express": "^5.1.0",
+    "jokes": "^0.0.2",
+    "node": "^20.19.6"
   }
 }
