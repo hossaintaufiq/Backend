@@ -1,0 +1,14 @@
+setting up the npm 
+setting up the express and nodemon 
+
+
+
+setting up ejs for ejs pages 
+  install ejs from npm 
+  setup ejs as a view engine 
+
+setting up public static files 
+
+dynamic routing 
+    dynamic routing 
+    how to get the data coming from frontend and at backend route 
